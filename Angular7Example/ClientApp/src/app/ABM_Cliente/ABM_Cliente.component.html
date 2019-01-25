@@ -1,0 +1,116 @@
+<div class="container" [hidden]="mostrarLista">
+
+  <h3>Datos del cliente</h3>
+
+  <div class="row">
+    <div class="col-md-4">
+      <label for="txtNombre">Nombre</label>
+      <input type="text" name="txtNombre" id="txtNombre" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="txtDni">DNI</label>
+      <input type="text" name="txtDni" id="txtDni" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="txtTelefono">Telefono</label>
+      <input type="text" name="txtTelefono" id="txtTelefono" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="txtFechaCumple">Cumpleaños</label>
+      <input type="date" name="txtFechaCumple" id="txtFechaCumple" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="txtSaldo">Saldo</label>
+      <input type="number" name="txtSaldo" id="txtSaldo" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="txtCalle">Calle</label>
+      <input type="text" name="txtCalle" id="txtCalle" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="txtNumero">Numero</label>
+      <input type="text" name="txtNumero" id="txtNumero" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="txtPiso">Piso</label>
+      <input type="text" name="txtPiso" id="txtPiso" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="txtDepto">Depto</label>
+      <input type="text" name="txtDepto" id="txtDepto" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="txtCodigoPostal">Codigo postal</label>
+      <input type="text" name="txtCodigoPostal" id="txtCodigoPostal" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="txtLocalidad">Localidad</label>
+      <input type="text" name="txtLocalidad" id="txtLocalidad" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="ckCtacte">Cuenta corriente</label>
+      <input type="checkbox" name="ckCtacte" id="ckCtacte" value="1" class="form-control" />
+    </div>
+  </div>
+
+  <br />
+  <br />
+  <h3>Usuarios autorizados del cliente</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <label for="">Nombre</label>
+      <input type="text" name="txtNombre2" id="txtNombre2" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="">DNI</label>
+      <input type="text" name="txtDni2" id="txtDni2" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="">Cumpleaños</label>
+      <input type="date" name="txtFechaCumple2" id="txtFechaCumple2" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <br />
+      <button name="cmdAgregar" id="cmdAgregar"><i class="fas fa-plus-circle"></i> Agregar</button>
+    </div>
+
+    <div class="col-md-12">
+      <br />
+      <select multiple name="lista" id="lista" class="form-control"></select>
+    </div>
+  </div>
+
+  <br />
+  <br />
+  <div class="row">
+    <div class="col-md-4">
+      <button name="cmdCancelar" id="cmdCancelar" class="btn btn-default" (click)="Cancelar()"><i class="fas fa-ban"></i> Cancelar</button>
+    </div>
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+      <button name="cmdAceptar" id="cmdAceptar" class="btn btn-default"><i class="far fa-save"></i> Aceptar</button>
+    </div>
+  </div>
+  <br />
+  <br />
+</div>
+
+<table class='table' *ngIf="mostrarLista">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Temp. (C)</th>
+      <th>Temp. (F)</th>
+      <th>Summary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!--<tr *ngFor="let forecast of forecasts">
+      <td>{{ forecast.dateFormatted }}</td>
+      <td>{{ forecast.temperatureC }}</td>
+      <td>{{ forecast.temperatureF }}</td>
+      <td>{{ forecast.summary }}</td>
+    </tr>-->
+  </tbody>
+</table>
