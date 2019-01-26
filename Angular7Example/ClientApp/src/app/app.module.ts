@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { ABM_AutoComponent } from './ABM_Auto/ABM_Auto.component';
 import { ABM_ClienteComponent } from './ABM_Cliente/ABM_Cliente.component';
+import { CierreAutoComponent } from './CierreAuto/CierreAuto.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
 @NgModule({
@@ -20,6 +21,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     CounterComponent,
     ABM_AutoComponent,
     ABM_ClienteComponent,
+    CierreAutoComponent,
     FetchDataComponent
   ],
   imports: [
@@ -31,6 +33,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
       { path: 'counter', component: CounterComponent },
       { path: 'ABM_Auto', component: ABM_AutoComponent },
       { path: 'ABM_Cliente', component: ABM_ClienteComponent },
+      { path: 'CierreAuto', component: CierreAutoComponent },
       { path: 'fetch-data', component: FetchDataComponent },
     ])
   ],
